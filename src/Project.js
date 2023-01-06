@@ -53,6 +53,20 @@ function Project() {
                         <span>#RestfulAPIs</span>
                     </div>
                 </a>
+                <a href="https://github.com/coidng21/portfolio.git" className="project-box">
+                    <img src={require("./style/images/project-00.png")} alt="project img"></img>
+                    <div className="project-text">
+                        <h2>Portfolio</h2>
+                        <p>The website has 4 main components: main page, about me page, 
+                            projects page, and contact page. It is mainly built to introduce myself 
+                            and projects I have done. It is built with React, javascript, html, and css.
+                        </p>
+                        <span>#React</span>
+                        <span>#HTML</span>
+                        <span>#CSS</span>
+                        <span>#Javascript</span>
+                    </div>
+                </a>
             </div>
         </Fragment>
     )
