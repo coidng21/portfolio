@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Lalezar&family=Roboto+Condensed&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* App Page */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.menu {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: #8466ab;
+}
+
+#logo {
+    line-height: 50px;
+    padding: 25px;
+    font-size: 30px;
+    font-family: 'Bowlby One SC', cursive;
+}
+
+.menu a {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    line-height: 50px;
+    font-family: 'Lalezar', cursive;
+}
+
+.menu a:hover {
+    color: #e7ddf3
+}
+
+.menu ul {
+    position: absolute;
+    display: inline-block;
+    list-style: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    margin: 20px;
+}
+
+.sns {
+    float: right;
+    margin-right: 10px;
+}
+
+.sns a {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 35px;
+    margin: 5px 10px;
+}
+
+.sns a i {
+    color: white;
+}
+
+.sns a:nth-child(1):hover i:nth-child(1) {
+    color: #171515;
+}
+
+.sns a:nth-child(2):hover i {
+    color: #0072b1;
+}
+
+.body-container {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+
+.image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.image img {
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    margin-top: 80px;
+    object-fit: cover;
+}
+
+.short-bio {
+    position: absolute;
+    border-radius: 10px;
+    left: 50%;
+    margin-top: 150px;
+    border: 2px solid #8466ab;
+    width: 45%;
+    height: 60%;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+    box-shadow: 10px 10px 20px #8466ab6c;
+    cursor: pointer;
+}
+
+
+#hi {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 30px;
+}
+
+.short-bio h1 {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -45%);
+    font-size: 80px;
+}
+
+
+.description p {
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    width: 100%;
+    transform: translate(-50%, -12%);
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.project-button {
+    position: absolute;
+    background-color: #8466ab;
+    border-radius: 10px;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+    width: 22%;
+    box-shadow: 4px 4px 6px #00000070;
+}
+
+.project-button a {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 18px;
+}
+
+
+.short-bio:hover {
+    border: 2px solid white;
+    color: white;
+    box-shadow: 10px 10px 20px #00000091;
+    background-color: #624785;
+}
+
+.short-bio:hover p {
+    color: white;
+    text-shadow: 2px 2px 10px #00000091;
+}
+
+.short-bio:hover h1 {
+    color: white;
+    text-shadow: 2px 2px 10px #00000091;
+}
+
+.short-bio:hover .project-button {
+    background-color: white;
+}
+
+.short-bio:hover .project-button a {
+    color: #8466ab;
+    text-shadow: none;
+}
+
+
+
+/* About Me Page */
+.container {
+    display: flex;
+    width: 100%;
+    height: 650px;
+}
+
+.square {
+    width: 60%;
+    height: 60%;
+    position: relative;
+    margin: 120px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 40% 60% 65% 35% / 40% 45% 44% 60%;
+    transition: 0.5s;
+    animation: circle 5s linear infinite;
+}
+
+.square div {
+    position: absolute;
+    font-size: 0.8rem;
+    top: 55%;
+    left: 50%;
+    transform: translate(-55%, -59%);
+    width: 70%;
+    text-align: center;
+    color: black;
+}
+
+
+.date {
+    font-size: 12px;
+}
+
+.small {
+    font-size: 12px;
+}
+
+.square a {
+    font-size: 12px;
+    color: black;
+    text-decoration: underline;
+}
+
+.square span:nth-child(1) {
+    animation: circle 6s linear infinite;
+}
+
+.square span:nth-child(2) {
+    animation: circle 4s linear infinite;
+    animation-direction: reverse;
+}
+
+.square span:nth-child(3) {
+    animation: circle 10s linear infinite;
+}
+
+.square:hover span:nth-child(1) {
+    opacity: 0.3;
+}
+
+.square:hover span:nth-child(2) {
+    opacity: 0.5;
+}
+
+.square:hover span:nth-child(3) {
+    opacity: 0.8;
+}
+
+.square:nth-child(1):hover span {
+    border: none;
+    background-color: #7410d0;
+}
+
+.square:nth-child(2):hover span {
+    border: none;
+    background-color: #481677;
+}
+
+.square:nth-child(3):hover span {
+    border: none;
+    background-color: #1e0f2a;
+}
+
+.square:nth-child(1):hover div,
+.square:nth-child(2):hover div,
+.square:nth-child(3):hover div,
+.square:nth-child(3):hover div a {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transforM: rotate(360deg);
+    }
+}
+
+/* Project Box Style */
+.project-container h1 {
+    color: #8466ab;
+    padding-top: 5px;
+    text-align: center;
+    font-family: 'Lalezar', cursive;
+}
+.project-box {
+    border: 3px solid #8466ab;
+    display: flex; 
+    margin-top: 10px;
+    border-radius: 5px;
+    margin-left: 2.5%;
+    width: 95%;
+    box-shadow: 5px 5px 10px #0000007e;
+}
+
+.project-box img {
+    width: 440px;
+    height: 180px;
+    padding: 5px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-text {
+    width: 100%;
+    margin-left: 10px;
+    padding: 10px;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.project-text h2 {
+    font-size: 20px;
+}
+
+.project-text p {
+    margin-top: 5px;
+    height: 63%;
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+.project-text span {
+    padding: 5px;
+    background-color: #8466ab;
+    font-size: 11px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.project-box:hover {
+    background-color: #452d64;
+    box-shadow: 10px 10px 20px #000000a6;
+    transform: translate(5px, 5px);
+}
+
+.project-box:hover .project-text {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.project-box:hover .project-text span {
+    background-color: white;
+    color: black;
+    text-shadow: 2px 2px 2px #b1a1c80f;
+}
+
+/* Contact Page */
+.contact {
+    position: absolute;
+    background-color: #8466ab;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 12%;
+    font-family: 'Lalezar', cursive;
+}
+
+.contact h1 {
+    font-size: 60px;
+}
+
+.contact h2 {
+    font-size: 30px;
+}
+
+.contact h3 {
+    font-size: 20px;
+    margin: 5px;
+}

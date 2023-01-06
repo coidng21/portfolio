@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { Link } from "react-router-dom";
+import Menu from "./components/Menu/Menu";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div>
+        <Menu/>
+      </div>
+      <div className="container">
+        <div className="body-container">
+          <div className="image">
+          <img src={require("./style/images/image-01.jpg")} alt="my-emoticon" />
+          </div>
+          <a href="/AboutMe" className="short-bio">
+            <p id="hi">Hi 👋 &nbsp; I'm</p>
+            <h1>Hai Jin</h1>
+            <div className="description">
+              <p>
+                🎓 Sophomore Studying in NUS Business Analytics <br />
+                👩‍💻 Software Engineer in NUS Fintech Society
+              </p>
+              <div className="project-button">
+                <a href="/Projects">View Projects</a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </Fragment>
   );
 }
 
